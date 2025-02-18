@@ -1,0 +1,61 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  h1 {  text-align: center;
+    padding: 20px;
+  }
+  
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: min(90vw, 600px);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .color-box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: auto;
+    flex-shrink: 0;
+    background-color: lightcoral;
+    transition: transform 0.5s ease-in-out, opacity 0.3 ease-in-out;
+  }
+  
+  .color1 {
+    background-color: #f4f476;
+  }
+  
+  .color2 {
+    background-color: rgb(200, 45, 17);
+  }
+  
+  .color3 {
+    background-color: steelblue;
+  }
+  
+  .color4 {
+    background-color: hsl(230 50 12);
+  }
+  
+  
+  .color5 {
+    background-color: rgb(200, 45, 17, 0.5); 
+  }
+  
+  /* Animation effect when elements move */
+  .color-box:hover {
+    transform: scale(1.1); /* Slight hover effect */
+  }
